@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> -->
+
+    <!-- <style>
+        /* Internal CSS Example */
+        h4 {
+            color: green;
+            font-size: 20px;
+        }
+    </style>-->
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="container">      <!-- Header Component-->
+             <img src="./Images/GDCSS logo.jfif" alt="logo" height="100px">
+    <nav>                   <!--h2 and nav are Sibling Components-->
+        <a class="nav-link" href="Home.html">Home</a>
+        <a class="nav-link" href="About.html">About</a>
+        <a class="nav-link" href="Contact.html">Contact</a>
+    </nav>
+    </header>
+
+    <main>
+        <!-- Welcome Section -->
+        <section class="container hero-section">
+             <h1>Welcome to GDC Saidu Sharif Swat</h1>
+             <p>Here you can find all information about GDC Saidu Sharif Swat</p>
+             <img src="./Images/college.jpg" alt="Building">
+             <a href="#" class="greenRoundBtn">Visit our College</a>
+        </section>
+
+        <!-- Courses -->
+       
+        <section class="container section">
+            <h2>Courses</h2>
+            <div class="course-wraper">
+                <div class=" course-card" >
+                    <h3>Computer Science</h3>
+                    <p>Computer Science is the study of Computers and computational systems.</p>
+                    <img src="./Images/cs.jpeg" alt="">
+                    <!-- <a href="#" class="nav-link">Visit our college</a> -->
+                </div>
+
+                <div class=" course-card" >
+                    <h3>FSc Pre-Medical</h3>
+                    <p>Pre Medical is the study of the medical profession.</p>
+                    <img class="hidden-element" src="./Images/Medical.jpg" alt="">
+                </div>
+
+                <div class=" course-card" >
+                    <h3>FSc Pre-Engineering</h3>
+                    <p>Pre Engineering is the study of engineering.</p>
+                    <img src="./Images/engineering.jpeg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <!-- Staff Section -->
+        <section class="container">
+            <h2>Staff</h2>
+            <div class=" staff-wraper">
+                <div>
+                    <img src="./Images/Ubaid4.jpg" alt="" height="250px">
+                    <h4>Ubaid Ullah</h4>
+                    <p>Professor of Web Development</p>
+                </div>
+
+                <div>
+                    <img src="./Images/sammi2.jpg" alt="" height="250px">
+                    <h4 >Salman Sami</h4>
+                    <p>Professor of Computer Science</p>
+                </div>
+
+                <div>
+                    <img src="./Images/abdullah1.jpg" alt="" height="250px">
+                    <h4>Abdullah</h4>
+                    <p>Professor of Pre-Medical</p>
+                </div>
+
+                <div>
+                    <img src="./Images/Zeeshan Saleem3.jpg" alt="" height="250px">
+                    <h4>Zeeshan Saleem</h4>
+                    <p>Professor of Pre-Engineering</p>
+                </div>
+            </div>
+        </section>
+            <div style="text-align: center; margin-bottom: 30px;">
+                <a href="about.html" class="greenRoundBtn">View all Staff</a>
+            </div>
+    </main>
+
+    <footer class="container">
+        <div>
+            <img src="./Images/GDCSS logo.jfif" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam sed expedita ad nisi autem, corrupti deleniti rerum.</p>
+            <div class="social-icons">
+                <a href="https://facebook.com" target="_blank">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://youtube.com" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </div>
+        <div>
+            <h4>Quick Links</h4>
+            <ul>
+                <li >
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Courses</a>
+                </li>
+                <li>
+                    <a href="#">Staff</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h4>Supports</h4>
+            <ul>
+                <li >
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Courses</a>
+                </li>
+                <li>
+                    <a href="#">Staff</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <div>
+            <h4>Subscribe</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, repellendus!</p>
+            <form class="footer-subscribe">
+                <div class="icon-wraper">
+                    <i class="fa-regular fa-envelope"></i>
+                </div>
+                <input type="email" placeholder="Enter your email">
+                <input type="submit" value="Subscribe">
+            </form>
+        </div>
+        
+    </footer>
+
+</body>
+</html>

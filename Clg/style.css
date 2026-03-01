@@ -1,0 +1,267 @@
+/* CSS Selector
+/* 1. Tag name */
+/* 2. ID using "." */
+/* 3. Class using "#" */
+
+header{
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav a {
+    color: #00AF50; 
+    font-size: 20px;
+    text-decoration: none;
+    display: inline;
+}
+header nav {
+    display: flex;
+    gap: 20px;
+}
+
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* Universal Selector */
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin: 0;
+    /* width: 300px; */
+    /* border: 13px solid red; */
+    box-sizing: border-box;
+}
+
+
+.container {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+/* Course section */
+.course-wraper {
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.course-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    box-shadow: 15px 9px 10px 0px #00000038;
+    width: 30%;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+.course-card h3{
+    color: #0072BB;
+    padding-left: 10px;
+    padding-top: 10px;
+    font-size: 20px;
+}
+.course-card p{
+    color: #2a2a2a;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+.course-card img {
+    width: 100%;
+}
+
+
+/* Staff Section */
+.staff-wraper {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+.staff-wraper>div {
+    max-width: 22%;
+    text-align: center;
+}
+.staff-wraper>div img {
+    max-width: 300px;
+    border-radius: 300px;
+    margin-bottom: 30px;
+}
+
+
+.section{
+    padding: 40px 15px;
+}
+
+
+/* button */
+.greenRoundBtn {
+    background-color: #00AF50;
+    color: #fff;
+    border-radius: 200px;
+    padding: 10px 20px;
+    text-decoration: none;
+    /* text-align: center; */
+    /* margin-bottom: 50px; */
+}
+
+
+h2 {
+    color: #00AF50;
+    font-size: 32px;
+}
+
+
+/* Hero Section styles */
+.hero-section{
+    background-color: grey;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                url(./Images/bg.jpg);
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    /* padding: top right bottom left */
+    /* padding: top-bottom left-right */
+    /* padding: top left-right bottom */
+    padding: 40px 0;
+}
+.hero-section h1{
+    font-size: 34px;
+}
+.hero-section p{
+    font-size: 20px;
+}
+.hero-section img{
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+    width: 400px;
+    height: 266px;
+}
+.hero-section a{
+    font-size: 24px;
+    text-align: center;
+    background-color: green;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    /* border-radius: top-left top-right bottom-left bottom-right */
+    border-radius: 27px;
+}
+
+/* Footer Section */
+footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: grey;
+    color: rgb(211, 211, 211);
+    gap: 20px;
+    padding: 30px;
+}
+footer>div {
+    max-width: 35%;
+}
+footer>div:first-child,
+footer>div:last-child {
+    width: 35%;
+}
+footer h4 {
+    color: #fff;
+}
+footer .logo {
+    border-radius: 200px;
+    width: 80px;
+}
+
+/* .footer>div:nth-child(even) {
+    width: 35%;
+} */
+footer img {
+    width: 80px;
+    border-radius: 200px;
+}
+footer a:hover {
+    color: #00AF50;
+    font-size: 130%;
+}
+footer a {
+    text-decoration: none;
+    color: #fff;
+    transition: all ease .5s;
+}
+footer p {
+    color: #cfcece;
+}
+footer .social-icons {
+    padding-top: 10px;
+}
+footer ul {
+    list-style: none;
+}
+footer i {
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+/* Camel Case | */
+/* anyClassName | any-class-name | any_class--name */
+.footer-subscribe {
+    background-color: #fff;
+    border-radius: 200px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 20px;
+}
+.footer-subscribe input {
+    padding: 10px;
+}
+.footer-subscribe input,
+.footer-subscribe input:focus {
+    outline: none;
+    border: none;
+}
+.footer-subscribe input [type="email"] {
+    flex-grow: 1;
+}
+.footer-subscribe input [type="submit"] {
+    background: #00AF50;
+    color: #fff;
+    border-radius: 100px;
+}
+.footer-subscribe i {
+    color: #000;
+    font-size: 18px;
+    width: 18px;
+}
+.footer-subscribe .icon-wraper {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    background: rgb(206, 206, 206);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-subscribe input[type="email"]:user-invalid {
+    color: red;
+}
+    
